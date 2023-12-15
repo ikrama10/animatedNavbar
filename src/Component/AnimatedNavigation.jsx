@@ -7,15 +7,16 @@ import {
   faUser,
   faAddressBook,
 } from '@fortawesome/free-solid-svg-icons'
-
 import dog from '../Assets/dog.avif'
+
+
 const AnimatedNavigation = () => {
-  const [showNav, setShownav] = useState(false)
-  const handleOpenNav = () => {
-    setShownav(true)
+  const [showNav, setShowNavbar] = useState(false)
+  const handleOpenNavbar = () => {
+    setShowNavbar(true)
   }
-  const handleCloseNav = () => {
-    setShownav(false)
+  const handleCloseNavbar = () => {
+    setShowNavbar(false)
   }
   return (
     <div>
@@ -72,11 +73,11 @@ const AnimatedNavigation = () => {
           } circle flex items-end justify-between bg-[#ff7979] w-48 h-48 px-12 py-10 rounded-full fixed 
              transition-transform duration-500 ease-linear -top-24 -left-24`}
         >
-          <div className="close cursor-pointer" onClick={handleCloseNav}>
+          <div className="close cursor-pointer" onClick={handleCloseNavbar}>
             <FontAwesomeIcon icon={faXmark} className="text-white h-8" />
           </div>
 
-          <div className="Open cursor-pointer" onClick={handleOpenNav}>
+          <div className="Open cursor-pointer" onClick={handleOpenNavbar}>
             <FontAwesomeIcon icon={faBars} className="text-white h-8" />
           </div>
         </div>
