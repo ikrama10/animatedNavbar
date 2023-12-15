@@ -86,23 +86,27 @@ const AnimatedNavigation = () => {
               <li
                 className={`${
                   showNav ? 'translate-x-40 delay-100' : 'translate-x-0'
-                } text-white hover:text-[#ff7979] transition-all duration-150 cursor-pointer flex items-center ease-in-out mb-8`}
+                } text-white  transition-all duration-150 cursor-pointer flex items-center ease-in-out mb-8`}
               >
                 <FontAwesomeIcon icon={faHouse} className=" h-6" />
-                <span className="uppercase ml-2 font-semibold text-base">Home</span>
+                <span className="uppercase ml-2 font-semibold text-base">
+                  Home
+                </span>
               </li>
               <li
                 className={`${
                   showNav ? 'translate-x-44 delay-300' : 'translate-x-0'
-                }  text-white hover:text-[#ff7979] transition-all duration-300 cursor-pointer flex items-center ease-out mb-8`}
+                }  text-white transition-all duration-300 cursor-pointer flex items-center ease-out mb-8`}
               >
                 <FontAwesomeIcon icon={faUser} className="h-7" />
-                <span className="uppercase ml-2 font-semibold text-base">about</span>
+                <span className="uppercase ml-2 font-semibold text-base">
+                  about
+                </span>
               </li>
               <li
                 className={`${
                   showNav ? 'translate-x-48 delay-500' : 'translate-x-0'
-                }  text-white hover:text-[#ff7979] transition-all duration-300 cursor-pointer flex items-center ease-out mb-8`}
+                }  text-white transition-all duration-300 cursor-pointer flex items-center ease-out mb-8`}
               >
                 <FontAwesomeIcon icon={faAddressBook} className="h-6" />
                 <span className="uppercase ml-2 font-semibold text-base">
